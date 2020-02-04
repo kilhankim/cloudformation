@@ -60,17 +60,6 @@
             "Type": "AWS::EC2::Instance"
         }
     }
-,
-  "Outputs" : {
-    "URL" : {
-      "Value" : { "Fn::Join" : [ "", ["http://", { "Fn::GetAtt" : ["instance", "PublicIp"] }]]},
-      "Description" : "Newly created application URL"
-    }
-  }
-
-
-
-
 
 }
 
