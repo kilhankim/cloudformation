@@ -31,7 +31,7 @@ from awacs.aws import (
 from awacs.sts import AssumeRole
 
 ApplicationName = "jenkins"
-ApplicationPort = "8080"
+ApplicationPort = "80"
 
 GithubAccount = "EffectiveDevOpsWithAWS"
 GithubAnsibleURL = "https://github.com/{}/ansible".format(GithubAccount)
