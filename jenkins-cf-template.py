@@ -33,7 +33,7 @@ from awacs.sts import AssumeRole
 ApplicationName = "jenkins"
 ApplicationPort = "80"
 
-GithubAccount = "EffectiveDevOpsWithAWS"
+GithubAccount = "kilhankim"
 GithubAnsibleURL = "https://github.com/{}/ansible".format(GithubAccount)
 
 AnsiblePullCmd = \
@@ -64,7 +64,6 @@ t.add_resource(ec2.SecurityGroup(
             FromPort="22",
             ToPort="22",
             CidrIp="0.0.0.0/0",
-            //CidrIp=PublicCidrIp,
         ),
         ec2.SecurityGroupRule(
             IpProtocol="tcp",
